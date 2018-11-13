@@ -1,0 +1,130 @@
+@import "../base/global";
+
+.info-lists {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  ul {
+    padding-left: 15px;
+    margin-bottom: 20px;
+  }
+  li {
+    @extend %flex-between;
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    padding: 15px 15px 15px 0;
+
+    label, span {
+      font-size: $fz-14;
+      color: rgba(70, 81, 102, 1);
+      line-height: 20px;
+    }
+
+    label {
+      font-family: $pfm;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    span {
+      font-family: $pfr;
+      margin-left: 10px;
+      text-align: right;
+    }
+  }
+
+  .query-btn, .pay-btn {
+    border-radius: 50px;
+    background-color: rgba(255, 168, 9, 1);
+    box-shadow: 0 4px 10px 0 rgba(255, 168, 9, 0.5);
+    color: #ffffff;
+    font-size: $fz-16;
+    font-family: $pfm;
+    font-weight: 500;
+    width: 147px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .query-btn {
+    margin-right: 15px;
+  }
+}
+
+.layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  &-mask {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+  }
+
+  &-content {
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    right: 18px;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px 8px 0 0;
+    padding-left: 15px;
+    overflow: hidden;
+
+    p {
+      color: rgba(70, 126, 234, 1);
+      font-size: $fz-12;
+      font-family: $pfr;
+      line-height: 20px;
+      padding: 10px 15px 10px 0;
+    }
+
+    .lists {
+      border-top: 1px solid rgba(223, 223, 223, 1);
+      padding-top: 15px;
+      margin-bottom: 15px;
+
+      li {
+        color: rgba(70, 81, 102, 1);
+        font-size: $fz-14;
+        font-family: $pfr;
+        line-height: 24px;
+
+        &.current-progress {
+          color: rgba(243, 85, 48, 1);
+        }
+      }
+    }
+  }
+
+  &-head {
+    border-bottom: 1px solid rgba(223, 223, 223, 1);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(70, 81, 102, 1);
+    font-size: $fz-16;
+    font-family: $pfs;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 10px 15px 10px 0;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+
+    i {
+      float: right;
+      font-weight: 400;
+      font-size: $fz-12;
+    }
+  }
+
+  &-wrap {
+    position: absolute;
+    top: 0;
+    padding-top: 43px;
+    height: 100%;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link href="../assets/css/ZzcfList.min.css" rel="stylesheet"/>
+  <script src="../assets/js/lib/flex/flex.js"></script>
+  <title>&lrm;</title>
+</head>
+<body>
+<div class="wrapper">
+  <h1 class="page-name">自主处罚信息列表</h1>
+  <div class="info-lists el-shadow">
+    <ul>
+      <li>
+        <label>违法时间</label>
+        <span>2018-02-04 20:14:32</span>
+      </li>
+      <li>
+        <label>违法地点</label>
+        <span>延安东路与陕西路交叉口</span>
+      </li>
+      <li>
+        <label>违法行为</label>
+        <span>13440-机动车违反禁令标志指示的</span>
+      </li>
+      <li>
+        <label>采集机关</label>
+        <span>贵阳市公安交通管理局交通科技处贵阳市公安交通管理局交通科技处贵阳市公安交通管理局交通科技处</span>
+      </li>
+      <li>
+        <label>违法记分</label>
+        <span>3分</span>
+      </li>
+      <li>
+        <label>罚款金额</label>
+        <span>50元</span>
+      </li>
+      <li>
+        <label>交款标记</label>
+        <span>未交款</span>
+      </li>
+      <li>
+        <label>处理标记</label>
+        <span>未处理</span>
+      </li>
+      <li>
+        <label>失败原因</label>
+        <span>没有此条记录的自主处罚信息</span>
+      </li>
+    </ul>
+    <button class="submit-btn" type="button" style="display: none">重置</button>
+    <button class="query-btn" type="button">查询交款结果</button>
+    <button class="pay-btn" type="button">马上交款</button>
+  </div>
+
+  <!--自主处罚信息列表没有数据-->
+  <div class="no-data" style="display: none">
+    <div class="icon"></div>
+    <p>暂无违法记录</p>
+  </div>
+</div>
+<script src="https://dcb-cdn.oss-cn-beijing.aliyuncs.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var $queryBtn = $('.query-btn');
+
+  $queryBtn.click(function () {
+    var data = [
+      {
+        punish_number: '5201001344305945', // 决定书号
+        result_msg: '发送给微信生成订单', // 当前进度
+        order_number: '520100134674990248932751', // 订单号
+        fee: '50.00', // 缴纳费用
+        late_fee: '0.00', // 滞纳金
+        pay_fee: '50.00', // 实际缴纳金额
+        pay_date: '2018-10-27 10:44:15', // 付款时间
+        person_liable: '张龙', // 当事人
+        driving_license: '98349379442380452' // 驾驶证号
+      },
+      {
+        punish_number: '5201001344305945', // 决定书号
+        result_msg: '发送给微信生成订单', // 当前进度
+        order_number: '520100134674990248932751', // 订单号
+        fee: '50.00', // 缴纳费用
+        late_fee: '0.00', // 滞纳金
+        pay_fee: '50.00', // 实际缴纳金额
+        pay_date: '2018-10-27 10:44:15', // 付款时间
+        person_liable: '张龙', // 当事人
+        driving_license: '98349379442380452' // 驾驶证号
+      },
+      {
+        punish_number: '5201001344305945', // 决定书号
+        result_msg: '发送给微信生成订单', // 当前进度
+        order_number: '520100134674990248932751', // 订单号
+        fee: '50.00', // 缴纳费用
+        late_fee: '0.00', // 滞纳金
+        pay_fee: '50.00', // 实际缴纳金额
+        pay_date: '2018-10-27 10:44:15', // 付款时间
+        person_liable: '张龙', // 当事人
+        driving_license: '98349379442380452' // 驾驶证号
+      }
+    ];
+
+    reloadJkjgList(data);
+  });
+
+  function reloadJkjgList (data) {
+    var tempHtml = '';
+
+    tempHtml += '<div class="layer">';
+    tempHtml += '<div class="layer-mask">';
+    tempHtml += '<div class="layer-content">';
+    tempHtml += '<h2 class="layer-head">处罚订单<i class="icon-font">&#xe634;</i></h2>';
+    tempHtml += '<div class="layer-wrap">';
+    tempHtml += '<p>因网络传输等原因，有可能导致虽进度显示罚款缴纳成功，但交款标记仍显示未交款，请耐心等待系统自动对账，如超过三天仍显示为未交款，请通过意见反馈留言，提供处罚决定书号，我们会通过人工模式尽快对账。</p>';
+
+    for (var i = 0, len = data.length; i < len; i++) {
+      tempHtml += '<ul class="lists">';
+      tempHtml += '<li>决定书号：' + data[i].punish_number + '</li>';
+      tempHtml += '<li class="current-progress">当前进度：' + data[i].result_msg + '</li>';
+      tempHtml += '<li>订单号：' + data[i].order_number + '</li>';
+      tempHtml += '<li>缴纳费用：&yen;' + data[i].fee + '</li>';
+      tempHtml += '<li>滞纳金：&yen;' + data[i].late_fee + '</li>';
+      tempHtml += '<li>实际缴纳金额：&yen;' + data[i].pay_fee + '</li>';
+      tempHtml += '<li>付款时间：' + data[i].pay_date + '</li>';
+      tempHtml += '<li>当事人：' + data[i].person_liable + '</li>';
+      tempHtml += '<li>驾驶证号：' + data[i].driving_license + '</li>';
+      tempHtml += '</ul>';
+    }
+
+    tempHtml += '</div>';
+    tempHtml += '</div>';
+    tempHtml += '</div>';
+    tempHtml += '</div>';
+
+    $('body').append(tempHtml);
+
+    closeLayer();
+  }
+
+  function closeLayer () {
+    var $closeBtn = $('.layer-head'), $layer = $('.layer');
+
+    $closeBtn.on('click', 'i', function () {
+      $layer.remove();
+    })
+  }
+</script>
+</body>
+</html>

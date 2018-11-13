@@ -1,0 +1,53 @@
+@import "../base/global";
+
+.select-card {
+  color: rgba(164, 172, 188, 1);
+  font-size: $fz-14;
+  font-family: $pfm;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.card-lists {
+  a {
+    @extend %flex-between;
+    padding: 15px;
+  }
+
+  strong, em {
+    display: block;
+  }
+
+  strong {
+    color: rgba(70, 81, 102, 1);
+    font-size: $fz-20;
+    font-family: $pfs;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 4px;
+  }
+
+  em {
+    color: rgba(108, 124, 156, 1);
+    font-size: $fz-15;
+    font-family: $pfr;
+    line-height: 21px;
+  }
+
+  i {
+    color: rgba(108, 124, 156, 1);
+    font-size: 24px;
+  }
+}
+
+.explain {
+  color: rgba(108, 124, 156, 1);
+  font-size: $fz-12;
+  font-family: $pfr;
+  line-height: 20px;
+  margin-top: 45px;
+
+  a {
+    color: rgba(70, 126, 234, 1);
+  }
+}

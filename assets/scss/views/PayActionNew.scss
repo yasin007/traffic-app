@@ -1,0 +1,56 @@
+@import "../base/global";
+
+.car-num {
+  color: rgba(70, 81, 102, 1);
+  font-size: 24px;
+  font-family: $pfs;
+  font-weight: 600;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+
+.info-lists {
+  padding-left: 15px;
+  margin-bottom: 40px;
+
+  li {
+    @extend %flex-between;
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    padding: 15px 15px 15px 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    label, span {
+      font-size: $fz-14;
+      color: rgba(70, 81, 102, 1);
+      line-height: 20px;
+    }
+
+    label {
+      font-family: $pfm;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    span {
+      font-family: $pfr;
+      margin-left: 10px;
+      text-align: right;
+
+      &.amt {
+        color: rgba(70, 126, 234, 1);
+      }
+    }
+  }
+}
+
+.tips {
+  color: rgba(70, 81, 102, 1);
+  font-size: $fz-14;
+  font-family: $pfr;
+  line-height: 24px;
+  padding-top: 10px;
+  margin-bottom: 40px;
+}

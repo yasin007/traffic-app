@@ -1,0 +1,79 @@
+@import "normalize";
+@import "iconfont";
+@import "mixins";
+@import "extends";
+@import "variable";
+
+// 页面整体左右边距
+.wrapper {
+  padding: 15px 18px 0;
+  width: 100%;
+}
+
+// 页面顶部标题
+.page-name {
+  @extend %flex-between;
+  font-size: 28px;
+  color: rgba(70, 81, 102, 1);
+  margin-bottom: 16px;
+  a {
+    background: rgba(255, 168, 9, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px 0 rgba(255, 168, 9, 0.5);
+    color: rgba(255, 255, 255, 1);
+    font-size: $fz-16;
+    font-family: $pfm;
+    font-weight: 500;
+    flex: 0 0 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.el-shadow {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px 0 rgba(89, 113, 139, 0.18);
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  border-radius: 50px;
+  background-color: rgba(255, 168, 9, 1);
+  box-shadow: 0 4px 10px 0 rgba(255, 168, 9, 0.5);
+  color: #ffffff;
+  display: block;
+  font-size: $fz-20;
+  font-family: $pfs;
+  height: 44px;
+  line-height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 299px;
+  text-align: center;
+}
+
+.no-data {
+  .icon {
+    background: url("../images/no-data.png") 0 0 no-repeat;
+    background-size: 100%;
+    height: 100px;
+    margin: 160px auto 10px;
+    width: 140px;
+  }
+
+  p {
+    color: rgba(70, 81, 102, 1);
+    font-size: $fz-14;
+    font-family: $pfr;
+    line-height: 20px;
+    text-align: center;
+  }
+}

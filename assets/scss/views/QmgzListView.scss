@@ -1,0 +1,44 @@
+@import "../base/global";
+
+.query-info {
+  p {
+    color: rgba(162, 162, 162, 1);
+    font-size: $fz-14;
+    font-family: $pfm;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    padding: 15px;
+  }
+
+  li {
+    padding-bottom: 6px;
+    @extend %flex-between;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    label, span {
+      color: rgba(70, 81, 102, 1);
+      font-size: $fz-14;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    label {
+      font-family: $pfm;
+      white-space: nowrap;
+    }
+
+    span {
+      font-family: $pfr;
+      text-align: right;
+      margin-left: 15px;
+    }
+  }
+}
+

@@ -1,0 +1,26 @@
+{
+  "name": "dcb-ui",
+  "version": "1.0.0",
+  "description": "dcb ui style",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dcb",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "postcss-px2rem": "^0.3.0"
+  },
+  "dependencies": {
+    "sass": "^1.14.3"
+  }
+}

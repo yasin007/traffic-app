@@ -1,0 +1,26 @@
+@import "../base/global";
+
+.reportInfo {
+  height: 102px;
+  .numberplate {
+    margin-left: 14px;
+    margin-top: 14px;
+    margin-right: 14px;
+    .title {
+      font-size: 15px;
+      font-family: PingFangSC-Medium;
+      font-weight: 500;
+      color: rgba(70, 81, 102, 1);
+      line-height: 21px;
+    }
+    .carNumber {
+      height: 21px;
+      font-size: 15px;
+      font-family: PingFangSC-Medium;
+      font-weight: 500;
+      color: rgba(164, 172, 188, 1);
+      line-height: 21px;
+    }
+  }
+
+}

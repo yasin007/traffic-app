@@ -1,0 +1,130 @@
+@import "../base/global";
+
+.form-group {
+  padding-left: 15px;
+  margin-bottom: 25px;
+  li {
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    padding: 15px 15px 15px 0;
+    @extend %flex-between;
+
+    &:last-child {
+      border-bottom: none;
+      display: block;
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+
+    label, input, span, textarea {
+      color: rgba(70, 81, 102, 1);
+      font-size: $fz-14;
+      line-height: 20px;
+    }
+
+    label {
+      font-family: $pfm;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    input, textarea {
+      &::placeholder {
+        color: rgba(206, 206, 206, 1);
+      }
+    }
+
+    input {
+      font-family: $pfr;
+      text-align: right;
+    }
+
+    span {
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
+
+      select {
+        border: none;
+        margin-right: -10px;
+        text-align: right;
+      }
+    }
+
+    i {
+      font-size: 24px;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    textarea {
+      display: block;
+      border: 1px solid rgba(108, 124, 156, 1);
+      border-radius: 8px;
+      resize: none;
+      height: 100px;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+}
+
+.file-uploader {
+  p {
+    font-size: $fz-14;
+    font-family: $pfr;
+    color: rgba(243, 85, 48, 1);
+    line-height: 20px;
+  }
+
+  .file-view {
+    background-color: rgba(231, 231, 231, 1);
+    border-radius: 8px;
+    height: 80px;
+    line-height: 80px;
+    overflow: hidden;
+    position: relative;
+    width: 80px;
+    margin-bottom: 40px;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      opacity: 0;
+      width: 100%;
+    }
+
+    input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      z-index: 10;
+    }
+
+    i {
+      color: rgba(255, 255, 255, 1);
+      font-size: 70px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+}
+
+.submit-form {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+
+
