@@ -1,26 +1,114 @@
 @import "../base/global";
 
-.reportInfo {
-  height: 102px;
-  .numberplate {
-    margin-left: 14px;
-    margin-top: 14px;
-    margin-right: 14px;
-    .title {
-      font-size: 15px;
-      font-family: PingFangSC-Medium;
-      font-weight: 500;
-      color: rgba(70, 81, 102, 1);
-      line-height: 21px;
-    }
-    .carNumber {
-      height: 21px;
-      font-size: 15px;
-      font-family: PingFangSC-Medium;
-      font-weight: 500;
-      color: rgba(164, 172, 188, 1);
-      line-height: 21px;
+.form-group {
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+
+li {
+  border-bottom: 1px solid rgba(228, 228, 228, 1);
+  padding: 15px 15px 15px 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  &:last-child {
+    border-bottom: none;
+    label {
+      display: block;
+      margin-bottom: 10px;
     }
   }
 
+  label, input, span {
+    color: rgba(70, 81, 102, 1);
+    font-size: $fz-14;
+    line-height: 20px;
+  }
+
+  label {
+    font-family: $pfm;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  input {
+    font-family: $pfr;
+    text-align: right;
+    &::placeholder {
+      color: rgba(206, 206, 206, 1);
+    }
+  }
+
+  span {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    select {
+      border: none;
+      margin-right: -10px;
+      text-align: right;
+    }
+  }
+
+  i {
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
+
+.page-form-warpper {
+  .title {
+    height: 40px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(70, 81, 102, 1);
+    line-height: 40px;
+    margin-top: 10px;
+  }
+  .detial {
+    font-size: 13px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(255, 168, 9, 1);
+    line-height: 18px;
+  }
+  .page-form-View {
+    margin-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+.page-form-location {
+  .title {
+    height: 40px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(70, 81, 102, 1);
+    line-height: 40px;
+    margin-top: 10px;
+  }
+  .detial {
+    font-size: 13px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(255, 168, 9, 1);
+    line-height: 18px;
+  }
+  .page-form-View {
+    margin-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+.actionBtn {
+  width: 100%;
+}
+
+
+
