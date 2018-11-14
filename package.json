@@ -21,6 +21,7 @@
     "postcss-px2rem": "^0.3.0"
   },
   "dependencies": {
+    "jquery-weui": "^1.2.1",
     "sass": "^1.14.3"
   }
 }
