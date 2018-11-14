@@ -1,3 +1,4 @@
+<!--违法举报页面详情-->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -10,24 +11,118 @@
 </head>
 <body>
 <div class="wrapper">
-    <h1 class="page-name">
-        <span>违法举报</span>
-    </h1>
-    <div class="el-shadow reportInfo">
-        <div class="numberplate">
-            <span class="title">号牌号码 贵A</span>
-            <input class="carNumber" placeholder="请输入车牌号后5位"/>
+    <h1 class="page-name">违法举报</h1>
+    <ul class="form-group el-shadow">
+        <li>
+            <label>号牌号码 贵A</label>
+            <input type="text" placeholder="请填写车牌号5位"/>
+        </li>
+        <li>
+            <label>号牌种类</label>
+            <span class="select-area">
+        <select>
+          <option value="a" selected>贵阳市公安交通管理局</option>
+          <option value="b">六盘水交警支队</option>
+          <option value="o">遵义交警支队</option>
+          <option value="m">铜仁市公安交通管理局</option>
+          <option value="d">黔西南州公安局交警支队</option>
+          <option value="d">毕节市公安局交警支队</option>
+        </select><i class="icon-font">&#xe605;</i>
+      </span>
+        </li>
+    </ul>
+    <button class="submit-btn actionBtn" type="button">查询违法</button>
+    <div class="page-form-warpper">
+        <h1 class="title">提交违法举报信息</h1>
+        <div class="page-form-info">
+            <h1 class="title">举报人信息</h1>
+            <h1 class="detial">举报成功和查实后将通过微信账号奖励举报人</h1>
         </div>
-        <div class="numberplate">
-            <span>号牌种类</span>
-            <div>02-小型汽车(蓝牌)</div>
+        <div class="el-shadow page-form-View">
+            <li>
+                <label>绑定微信</label>
+                <span class="select-area">
+        <select>
+          <option value="a" selected>请选择已绑定的微信账户</option>
+          <option value="b">六盘水交警支队</option>
+          <option value="o">遵义交警支队</option>
+          <option value="m">铜仁市公安交通管理局</option>
+          <option value="d">黔西南州公安局交警支队</option>
+          <option value="d">毕节市公安局交警支队</option>
+        </select><i class="icon-font">&#xe605;</i>
+      </span>
+            </li>
+            <li>
+                <label>举报人手机号</label>
+                <input type="text" placeholder="请填写举报人手机号"/>
+            </li>
+            <li>
+                <label>违法日期</label>
+                <span class="select-area">
+        <select>
+          <option value="a" selected>请选择年-月-日</option>
+          <option value="b">六盘水交警支队</option>
+          <option value="o">遵义交警支队</option>
+          <option value="m">铜仁市公安交通管理局</option>
+          <option value="d">黔西南州公安局交警支队</option>
+          <option value="d">毕节市公安局交警支队</option>
+        </select><i class="icon-font">&#xe605;</i>
+      </span>
+            </li>
+            <li>
+                <label>违法时间</label>
+                <span class="select-area">
+        <select>
+          <option value="a" selected>请选择时间</option>
+          <option value="b">六盘水交警支队</option>
+          <option value="o">遵义交警支队</option>
+          <option value="m">铜仁市公安交通管理局</option>
+          <option value="d">黔西南州公安局交警支队</option>
+          <option value="d">毕节市公安局交警支队</option>
+        </select><i class="icon-font">&#xe605;</i>
+      </span>
+            </li>
+        </div>
+    </div>
+    <div class="page-form-location">
+        <h1 class="title">违法发生地点</h1>
+        <div class="el-shadow page-form-View">
+            <li>
+                <label>违法地区</label>
+                <span class="select-area">
+        <select>
+          <option value="a" selected>贵阳</option>
+          <option value="b">六盘水交警支队</option>
+          <option value="o">遵义交警支队</option>
+          <option value="m">铜仁市公安交通管理局</option>
+          <option value="d">黔西南州公安局交警支队</option>
+          <option value="d">毕节市公安局交警支队</option>
+        </select><i class="icon-font">&#xe605;</i>
+      </span>
+            </li>
+            <li>
+                <label>违法地点</label>
+                <input type="text" placeholder="填写如贵遵高速20cm"/
+            </li>
+            <li>
+                <label>违法事件</label>
+                <span class="select-area">
+        <select>
+          <option value="a" selected>客运车辆超员</option>
+          <option value="b">六盘水交警支队</option>
+          <option value="o">遵义交警支队</option>
+          <option value="m">铜仁市公安交通管理局</option>
+          <option value="d">黔西南州公安局交警支队</option>
+          <option value="d">毕节市公安局交警支队</option>
+        </select><i class="icon-font">&#xe605;</i>
+      </span>
+            </li>
         </div>
     </div>
 </div>
-
 <script src="https://dcb-cdn.oss-cn-beijing.aliyuncs.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="../assets/js/lib/amazeui/amazeui.min.js"></script>
 <script src="../assets/js/utils/utils.min.js"></script>
-<script src="../assets/js/views/reportEnterDeatailView.min.js"></script>
+<script src="../assets/js/views/QmgzInputView.min.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ var postcss = require('gulp-postcss');
 var px2rem = require('postcss-px2rem');
 
 var dir = 'assets/';
-var styleFileName = 'reportEnterDeatailView'; // 页面样式文件名称
+var styleFileName = 'reportTiedResult'; // 页面样式文件名称
 
 var stylePaths = {
     sass: [
