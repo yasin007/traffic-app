@@ -1,0 +1,59 @@
+@import "../base/global";
+
+.wordsFont {
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(70, 81, 102, 1);
+  line-height: 24px;
+  white-space: pre-line;
+  margin-bottom: 40px;
+}
+
+.lineSpace {
+  margin-top: 25px;
+}
+
+.itemLine {
+  padding-left: 15px;
+  li {
+    border-bottom: 1px solid #E4E4E4;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+  }
+  input {
+    font-size: 15px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(70, 81, 102, 1);
+  }
+}
+
+.redFont {
+  font-size:14px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(243,85,48,1);
+}
+
+.icon-font {
+  font-family: "icon-font" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.itemName {
+  font-size: 15px;
+  font-family: PingFangSC-Medium;
+  font-weight: bold;
+  font-weight: 500;
+  color: rgba(70, 81, 102, 1);
+}
