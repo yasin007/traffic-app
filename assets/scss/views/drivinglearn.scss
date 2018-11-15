@@ -1,0 +1,56 @@
+@import "../base/global";
+
+.el-shadow {
+  position: absolute;
+  bottom: 158px;
+  left: 18px;
+  right: 18px;
+  top: 59px;
+  .title {
+    height: 25px;
+    font-size: 18px;
+    font-family: PingFangSC-Semibold;
+    font-weight: 600;
+    color: rgba(70, 126, 234, 1);
+    line-height: 25px;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 56px;
+    overflow: hidden;
+  }
+  .scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    top: 59px;
+    font-size: 13px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(70, 81, 102, 1);
+    line-height: 20px;
+    overflow: scroll;
+  }
+}
+
+.enterBtn {
+  position: fixed;
+  bottom: 90px;
+  left: 20px;
+  right: 20px;
+  width: 90%;
+  font-family: PingFangSC-Medium;
+}
+
+.checkBtn {
+  width: 90%;
+  position: fixed;
+  bottom: 26px;
+  left: 20px;
+  right: 20px;
+  background: white;
+  color: #FFA809;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  font-family: PingFangSC-Medium;
+  border: solid 1px;
+}
