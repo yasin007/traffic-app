@@ -6,30 +6,28 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    justify-content: space-between;
     border-bottom: 1px solid rgba(228, 228, 228, 1);
     padding: 15px 15px 15px 0;
-
   }
 
 
-  span{
+  label{
+    width: 22%;
     margin-bottom: 0;
-    font-size:14px;
-    font-family:PingFangSC-Medium;
-    font-weight:500;
-    color:rgba(70,81,102,1);
-    line-height:20px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium;
+    font-weight: 400;
+    color: rgba(70, 81, 102, 1);
+    line-height: 22px;
     white-space: nowrap;
   }
 
   input{
-    text-align: right;
-    font-weight:500;
-    line-height:20px;
+    overflow: hidden;
+    font-weight:400;
+    line-height:22px;
     background: none;
+    flex: 1;
   }
 }
 
@@ -85,4 +83,28 @@
 .feedback-submit{
   margin-top: 20px;
   margin-bottom: 46px;
+}
+
+.icon-color{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: rgba(245, 166, 35, 1);
+}
+
+.select-text{
+  font-size:14px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(70,81,102,1);
+  line-height:20px;
+  flex: 1;
+}
+
+.select-text-a{
+  font-size:14px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(70,81,102,1);
+  line-height:20px;
 }

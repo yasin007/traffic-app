@@ -1,0 +1,52 @@
+@import "../base/global";
+
+.search-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+
+  span {
+    font-size: 14px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(108, 124, 156, 1);
+    line-height: 20px;
+    margin-left: 15px;
+  }
+}
+
+.input-div {
+  padding: 12px 10px 12px 10px;
+  flex: 1;
+  display: flex;
+  align-content: center;
+  background: rgba(241, 241, 243, 1);
+  border-radius: 8px;
+
+  label {
+    margin-bottom: 0;
+    font-size: 11px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(70, 81, 102, 1);
+    line-height: 20px;
+  }
+
+  span {
+    text-align: center;
+    margin-left: 0;
+    width: 18px;
+    height: 18px;
+    line-height: 20px;
+  }
+
+  input {
+    width: 100px;
+    overflow: hidden;
+    line-height: 20px;
+    font-weight: 400;
+    background: none;
+    flex: 1;
+  }
+}
