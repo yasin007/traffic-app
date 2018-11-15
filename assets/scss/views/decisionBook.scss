@@ -1,0 +1,29 @@
+@import "../base/global";
+
+.el-shadow {
+  height: 50px;
+}
+
+.submit-btn {
+  margin-top: 40px;
+}
+
+input {
+  color: rgba(70, 81, 102, 1);
+  font-size: $fz-14;
+  line-height: 50px;
+  margin-left: 15px;
+
+}
+
+input {
+  &::placeholder {
+    color: rgba(206, 206, 206, 1);
+  }
+}
+
+input {
+  font-family: $pfr;
+  text-align: left;
+  width: 80%;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="813a6b7e-c7be-4696-b258-b5fa965e8e3c" name="localhost" url="http://10.10.9.49:8080">
+        <fileTransfer port="0" mountedRoot="E:\dcb\WebstormProjects" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
