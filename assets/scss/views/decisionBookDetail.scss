@@ -1,0 +1,75 @@
+@import "../base/global";
+
+.el-shadow {
+  padding-left: 15px;
+  margin-bottom: 25px;
+  li {
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    padding: 15px 15px 15px 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    label, input {
+      color: rgba(70, 81, 102, 1);
+      font-size: $fz-14;
+      line-height: 20px;
+    }
+
+    label {
+      font-family: $pfm;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    input {
+      font-family: $pfr;
+      text-align: right;
+      &::placeholder {
+        color: rgba(206, 206, 206, 1);
+      }
+    }
+    .getCode {
+      border-radius: 4px;
+      border: 1px solid #FFA809;
+      background: white;
+      color: #FFA809;
+      font-size: 14px;
+      font-family: PingFangSC-Medium;
+      font-weight: 500;
+      line-height: 20px;
+      width: 99px;
+      height: 34px;
+    }
+  }
+}
+
+.pay {
+
+  width: 100%;
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(70, 81, 102, 1);
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.number {
+  font-size: 24px;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  color: rgba(70, 81, 102, 1);
+  line-height: 33px;
+  margin-bottom: 10px;
+}

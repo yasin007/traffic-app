@@ -1,0 +1,20 @@
+@import "../base/global";
+
+.el-shadow {
+  width: 193px;
+  height: 193px;
+  margin: 50px auto 40px auto;
+  img {
+    background: black;
+    width: 178px;
+    height: 178px;
+    margin: 7px 7px 7px 7px;
+  }
+  p {
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(70, 81, 102, 1);
+    line-height: 22px;
+  }
+}
